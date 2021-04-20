@@ -1,0 +1,12 @@
+$mainColor: #F26376
+
+@mixin flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin transformScale($scaleMult)
+    &:hover
+        transform: scale($scaleMult)
+    &:hover path
+        fill: $mainColor
