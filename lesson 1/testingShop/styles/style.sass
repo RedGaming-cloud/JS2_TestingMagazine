@@ -1,0 +1,64 @@
+$standartItemWidth: 360px
+$mainColor: #F26376
+$textColor: #222222
+
+@import 'mixin'
+
+*
+    padding: 0px
+    margin: 0px
+    text-decoration: none
+
+input
+    outline: 0
+label
+    cursor: pointer
+.center
+    padding-left: calc(50% - 569px)
+    padding-right: calc(50% - 569px)
+.margin-center
+    margin-left: calc(50% - 569px)
+    margin-right: calc(50% - 569px)
+.header
+    background-color: $textColor
+    height: 75px
+    @include flex-center()
+    justify-content: space-between
+    position: relative
+.head__left
+    & > a:not(:last-child)
+        margin-right: 10px
+.head__right
+    & > a:not(:last-child)
+        margin-right: 10px
+.main
+    width: 100%
+    height: 94vh
+    background-color: #8080805c
+.goods-collection
+    padding-top: 40px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    gap: 30px
+    &__product
+        min-width: 358px
+        height: 240px
+        background-color: gray
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        border: 1px solid #000
+.button
+    width: 120px
+    height: 45px
+    background-color: #ff727266
+    border: 1px solid #000
+    display: flex
+    align-items: center
+    text-align: center
+    transition: 0.2s
+    &:hover
+        cursor: pointer
+        transform: scale(1.1)
